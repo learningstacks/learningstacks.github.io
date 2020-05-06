@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning Stacks LLC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4aaa418f5c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #0A0D41;
+      color: #fff;
+      padding: 8px 15px;
+      font-size: 32px;
+      border: 0;
+      height: 60px;
+      align-items: flex-end;
+    }
+
+    /*  
+      #CEF9F2 light cyan
+      #D6CA98 sage
+      #AFC1D6 light steel blue
+      #AB92BF glossy grape
+      #655A7C purple navy
+    */
+
+    /* background colors */
+
+    .carousel-caption {
+      top: 50%;
+      transform: translate-y(-50%);
+      text-transform: uppercase;
+    }
+
+    .btn {
+      font-size: 18px;
+      color: #fff;
+      padding: 12px 22px;
+      background-color: #5e4485;
+      border: 2px solid #fff;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+
+      h3 {
+        font-size: 80%;
+      }
+    }
+
+    body>.container-fluid>.row {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    body>.container {
+      margin: 0;
+    }
+
+    .our-capabilities {
+      background-color: #468C72;
+      color: #fff;
+    }
+
+    .our-capabilities .card {
+      background-color: transparent;
+      border: none;
+    }
+
+    .our-team {
+      background-color: #476A85;
+    }
+
+    .our-team h1 {
+      color: #fff;
+    }
+
+    .our-clients {
+      background-color: #CFA368;
+    }
+
+    .client-card {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 120px;
+      box-sizing: border-box;
+      padding: 1em;
+      margin: 0 7px 15px 7px;
+    }
+
+    .client-card img {
+      max-height: 100%;
+    }
+
+    .section-title {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="container-fluid">
+    <div class="row" style="align-items: baseline">
+      <img class="img-fluid" src="img/Logo.svg" style="width:40px; height:40px" />
+      <span
+        style="margin-right: 30px; line-height: 44px; font-size: 44px; font-weight: 300; font-style: italic; padding: 0">Learning
+        Stacks LLC</span>
+      <span style="line-height: 18px; font-size: 18px; font-weight: 300; font-style: italic; padding: 0">An E-Learning
+        Technology Company</span>
+    </div>
+  </nav>
+
+  <div class="container-fluid our-capabilities">
+    <div class="row justify-content-center">
+      <div class="col col-12 text-center">
+        <h1 class="section-title">Our Capabilities</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="card">
+          <div class="card-img card-img-top">
+            <i class="fas fa-graduation-cap" aria-hidden="true" style="font-size: 80px"></i>
+            <i class="fas fa-universal-access" aria-hidden="true" style="font-size: 80px"></i>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Instructional Design and Development</h2>
+            <p>Instructional&nbsp;design and development</p>
+            <p>Curriculum design and planning</p>
+            <p>Needs assessment</p>
+            <p>Content development and delivery strategies</p>
+            <p>Technical writing</p>
+            <p>Instructional strategies</p>
+            <p>Learning technology assessment</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-md-6">
+        <div class="col col-12">
+          <div class="card">
+            <div class="card-img card-img-top">
+              <i class="fas fa-film" aria-hidden="true" style="font-size: 80px"></i>
+            </div>
+            <div class="card-body">
+              <h2>Multimedia Production</h2>
+              <p>Audio/Video Production and Post-Production</p>
+              <p>Interactive video</p>
+              <p>Global delivery strategies</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12">
+          <div class="card">
+            <div class="card-img card-img-top">
+              <i class="fas fa-cogs" aria-hidden="true" style="font-size: 80px"></i>
+            </div>
+            <div class="card-body">
+              <h2>LMS Development and Management</h2>
+                <p>Moodle and Totara setup, configuration and administration services</p>
+                <p>Moodle and Totara custom plugin development</p>
+                <p>Moodle/IMIS integration plugins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-team container-fluid">
+    <div class="row justify-content-center">
+      <div class="col col-12 text-center">
+        <h1 class="section-title">Our Team</h1>
+      </div>
+      <div class="col col-sm-6">
+        <div class="card" style="max-width: 400px">
+          <img class="card-img-top" src="img/Patty.jpg" alt="Patty Stillwell">
+          <div class="card-body">
+            <h4 class="card-title">Patty Stillwell</h4>
+            <p class="card-text">Partner</p>
+            <p class="card-text">Patty Stillwell has 30 plus years experience as a Learning Strategist,
+              Education
+              Consultant, Researcher,
+              Instructional Designer, and Media Producer with a focus on technology-based solutions and
+              online
+              learning.
+            </p>
+            <p><a href="http://www.linkedin.com/in/stillwell"> <img
+                  src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
+                  alt="View Patty Stillwell's profile on LinkedIn" width="80" height="15"> </a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card" style="max-width: 400px">
+          <img class="card-img-top" src="img/Terry.jpg" alt="Terry Campbell">
+          <div class="card-body">
+            <h4 class="card-title">Terry Campbell</h4>
+            <p class="card-text">Partner</p>
+            <p class="card-text">Terry Campbell has 30 plus years of experience designing and building
+              software
+              systems
+              and has been employed
+              by
+              major firms as Software Developer, Tester, Analyst and Architect. Mr. Campbell also has
+              significant
+              experience
+              with project management disciplines.</p>
+            <p><a href="http://www.linkedin.com/in/terrycampbell"> <img
+                  src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
+                  alt="View Terry Campbell's profile on LinkedIn" width="80" height="15" scale="0"> </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-clients container-fluid">
+    <div class="row justify-content-center">
+      <div class="col col-12 text-center">
+        <h1 class="section-title">Recent Clients</h1>
+      </div>
+    </div>
+    <div class="row" style="align-items: stretch; justify-content: center;">
+      <div class="client-card">
+        <img class="img-fluid" src="img/unicef-logo.jpg" alt="Unicef">
+      </div>
+      <div class="client-card">
+        <img class="img-fluid" src="img/cli-logo.jpg" alt="University of Texas Childrens Learning Institute">
+      </div>
+      <div class="client-card">
+        <img class="img-fluid" src="img/jcahpo-logo.jpg" alt="JCAHPO">
+      </div>
+      <div class="client-card">
+        <img class="img-fluid" src="img/wildd-logo.png" alt="WILDD">
+      </div>
+      <div class="client-card">
+        <img class="img-fluid" src="img/nm-logo.jpg" alt="New Mexico">
+      </div>
+    </div>
+  </div>
+
+  <div class="fotter container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <address>
+          <strong>LEARNING STACKS LLC</strong><br />
+          1946 Chatsworth St. N.<br />
+          Roseville MN, 55433<br />
+          US<br />
+          <a href="tel:+16513424554">Phone: +1 651-341-4554</a>
+        </address>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
