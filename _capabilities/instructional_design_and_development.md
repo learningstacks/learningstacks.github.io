@@ -1,5 +1,5 @@
 ---
-title: Instructional Design and Development
+title: Instructional Design
 fas: fa-graduation-cap
 ---
 
@@ -11,4 +11,3 @@ End-to-end ELearning development including:
 - Technical writing
 - Instructional strategies
 - Learning technology assessment
-- Storyline Development

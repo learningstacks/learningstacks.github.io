@@ -3,6 +3,5 @@ title: LMS Development
 fas: fa-cogs
 ---
 
-- LMS setup and management
-- Custom plugins
+- Custom Moodle and Totara plugins
 - Moodle/IMIS integration

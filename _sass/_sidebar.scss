@@ -1,4 +1,3 @@
-
 /*
  * Sidebar
  *
@@ -6,66 +5,95 @@
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
- .sidebar {
-    color: rgba(255,255,255,.5);
-    background-color: $gray-900;
+.sidebar {
+  color           : #fff;
+  background-color: $aside-background-color;
+  padding         : 1rem;
 
+  header {
+    margin: 0;
+  }
+
+  .logo {
+    width : 64px;
+    height: 64px;
+    margin-right : 0.5rem;
+    margin-bottom: 0.5rem;
+    float: left;
+  }
+
+  .tagline {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+    display: block;
+  }
+
+  
+  .title {
+    line-height: 44px;
+    font-size  : 44px;
+    font-weight: 300;
+    font-style : italic;
+    padding    : 0;
+  }
+  
+  address {
+    display: none;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    position  : fixed;
+    padding   : 2rem 1rem;
+    top       : 0;
+    left      : 0;
+    bottom    : 0;
+    text-align: left;
+    
+    header {
+      margin-bottom: 1rem;
+    }
+    
     .logo {
-        width: 32px;
-        height: 32px;
+      display: block;
+      float: none;
     }
 
     address {
-        display: none;
-    }
-    
-    @include media-breakpoint-up(lg) {
-        position: fixed;
-        padding: 2rem 1rem;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        text-align: left;
-
-        .logo {
-            width: 64px;
-            height: 64px;
-        }
-
-        address {
-            display: block;
-            margin: 0 auto;
-            font-size: .8rem;
-            position: absolute;
-            bottom: 1rem;
-        }
-
-        .sidebar-nav {
-            display: block;
-        }
+      display  : block;
+      margin   : 0 auto;
+      font-size: .8rem;
+      position : absolute;
+      bottom   : 1rem;
     }
 
-
-    a {
-        color: #fff;
+    .sidebar-nav {
+      display: block;
     }
   }
 
- 
-  /* Sidebar nav */
-  .sidebar-nav {
-      display: none;
-    margin-bottom: 1rem;
+
+  a {
+    color: #fff;
   }
-  .sidebar-nav-item {
-    display: block;
-    line-height: 1.75;
-  }
-  a.sidebar-nav-item:hover,
-  a.sidebar-nav-item:focus {
-    text-decoration: underline;
-  }
-  .sidebar-nav-item.active {
-    font-weight: bold;
-  }
-   
+}
+
+
+/* Sidebar nav */
+.sidebar-nav {
+  display      : none;
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav-item {
+  display    : block;
+  line-height: 1.75;
+}
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+}

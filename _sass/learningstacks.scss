@@ -1,9 +1,19 @@
 
+
+
 // @import "variables";
 @import "bootstrap/bootstrap";
 // @import "syntax-highlighting";
 // @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 // @import "bootstrap_customization";
+
+
+$dark-red: #5D090F;
+$slate-blue: #476A85;
+$sand: #CFA368;
+// $aside-background-color: #A91E25;
+// $aside-background-color: $gray-800;
+$aside-background-color: $dark-red;
 
 @import "sidebar";
 @import "footer";
@@ -15,7 +25,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
   }
 
   #page-container {
@@ -24,21 +34,29 @@ body {
 
   .page-content {
 
-    section {
-      margin: 0;
-      padding: 15px;
-    }
-
     h1 {
       text-align: center;
         margin-top: 1em;
-        margin-bottom: 1em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    h2 {
+      color: $dark-red;
+    }
+
+    section {
+      padding-bottom: 2rem;
     }
   }
 
   .our-capabilities {
-    background-color: #468C72;
-    color: #fff;
+    // background-color: #468C72;
+    // background-color: #fff;
+    // color: #000;
+    h1 {
+      border-bottom: 1px solid #000;
+    }
   }
 
   .our-capabilities .card {
@@ -47,7 +65,7 @@ body {
   }
 
   .our-team {
-    background-color: #476A85;
+    background-color: $slate-blue;
 
     .card {
       margin-bottom: 1rem;
@@ -60,7 +78,7 @@ body {
   }
 
   .our-clients {
-    background-color: #CFA368;
+    background-color: $sand;
   }
 
 .page-content {
