@@ -1,0 +1,69 @@
+
+// @import "variables";
+@import "bootstrap/bootstrap";
+// @import "syntax-highlighting";
+// @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
+// @import "bootstrap_customization";
+
+@import "sidebar";
+@import "footer";
+@import "member_card";
+@import "client_card";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  #page-container {
+    margin: 0;
+  }
+
+  .page-content {
+
+    section {
+      margin: 0;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+  }
+
+  .our-capabilities {
+    background-color: #468C72;
+    color: #fff;
+  }
+
+  .our-capabilities .card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .our-team {
+    background-color: #476A85;
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  .our-team h1 {
+    color: #fff;
+  }
+
+  .our-clients {
+    background-color: #CFA368;
+  }
+
+.page-content {
+  padding: 0;
+}
+

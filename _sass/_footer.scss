@@ -1,0 +1,7 @@
+.page-footer {
+    background-color: $gray-900;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}

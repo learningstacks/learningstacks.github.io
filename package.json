@@ -1,0 +1,12 @@
+{
+  "name": "learningstacks.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:learningstacks/learningstacks.github.io.git",
+  "author": "Terry Campbell <terry@learningstacks.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4",
+    "jquery": "3"
+  }
+}

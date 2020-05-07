@@ -1,1 +1,25 @@
-theme: jekyll-theme-cayman
+destination: "_site"
+
+keep_files:
+  - _site
+
+include:
+  - .nojekyll
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - update_boostrap.sh
+
+collections:
+  - members
+  - clients
+  - capabilities
+
+sass:
+  load_paths: 
+  - _sass
+  - node_modules
+
+  # style: compressed

@@ -1,0 +1,16 @@
+---
+---
+<div class="card" style="display:flex; flex-flow: row nowrap; border:none">
+    <div style="flex-direction: columns; padding: 1rem; background-color: #CFA368">
+        <img class="card-img" style="width:120px; height:120px;"
+            src="{{ include.img }}" alt="{{ include.imgalt }}">
+        <p><a href="http://www.linkedin.com/in/stillwell"> <img
+                    src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
+                    alt="View Patty Stillwell's profile on LinkedIn" width="80" height="15"> </a></p>
+    </div>
+    <div style="margin: 1rem 0; padding:0 1rem;">
+        <p style="font-size:2rem; line-height: 2rem; margin:0">{{ include.name }}</p>
+        <p style="font-style:italic; margin: 0.5rem 0">{{ include.title }}</p>
+        {{ content }}
+    </div>
+</div>

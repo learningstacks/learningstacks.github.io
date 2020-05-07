@@ -1,0 +1,54 @@
+article.member-card {
+  background-color: #fff;
+  display         : flex;
+  flex-flow       : row;
+  border          : none;
+  margin: 15px;
+
+  aside {
+    flex-direction  : columns;
+    padding         : 1rem;
+    background-color: #CFA368;
+
+    .member-img {
+      width : 120px;
+      height: 120px;
+    }
+  }
+
+  .content {
+    margin : 1rem 0;
+    padding: 0 1rem;
+  }
+
+  header {
+    h2 {
+      font-size  : 2rem;
+      line-height: 2rem;
+      margin     : 0;
+    }
+
+    p {
+      font-style: italic;
+      margin    : 0.5rem 0;
+    }
+  }
+}
+
+
+//   <div class="member-card">
+//     <aside class="image-block" style="flex-direction: columns; padding: 1rem; background-color: #CFA368">
+//         <img class="card-img" style="width:120px; height:120px;"
+//             src="/assets/img/members/{{include.profile}}.jpg" alt="">
+//         <p><a href="http://www.linkedin.com/in/{{include.profile}}"> <img
+//                     src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
+//                     alt="View {{include.name}}'s profile on LinkedIn" width="80" height="15"> </a></p>
+//     </div>
+//     <div class="content-block">
+//         <header
+//         <h2 class="name">{{ include.name }}</h2>
+//         <p class="title">{{ include.title }}</p>
+//         </header>
+//         {{ include.description }}
+//     </div>
+// </div>profile
