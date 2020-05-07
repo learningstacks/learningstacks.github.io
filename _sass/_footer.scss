@@ -1,7 +1,17 @@
 .page-footer {
-    background-color: $gray-900;
+    background-color: $dark-red;
+    color           : white;
+    min-height      : 3rem;
+    padding-top     : 3rem;
+    font-size       : 0.8rem;
 
     @include media-breakpoint-up(lg) {
-        display: none;
+        * {
+            display: none;
+        }
+    }
+
+    a {
+        color: #fff;
     }
 }
