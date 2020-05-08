@@ -5,6 +5,9 @@
   "repository": "git@github.com:learningstacks/learningstacks.github.io.git",
   "author": "Terry Campbell <terry@learningstacks.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "bundle exec jekyll serve --livereload --trace --strict_front_matter --verbose"
+  },
   "dependencies": {
     "bootstrap": "4",
     "jquery": "3"
