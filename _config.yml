@@ -11,6 +11,11 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  - package.json
+  - yarn.lock
+  - update_bootstrap.sh
+  - yarn-error.log
+  - CNAME
 
 collections:
   - members
