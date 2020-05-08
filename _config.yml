@@ -1,10 +1,10 @@
+title: "Learning Stacks LLC"
+tagline: "Online Learning Technology"
+description: Learning Stacks provides Online Learning Technology services including Instructional Design, Multimedia production, and LMS customizations.
+
+url: https://www.learningstacks.com
+
 destination: "_site"
-
-keep_files:
-  - _site
-
-include:
-  - .nojekyll
 
 exclude:
   - Gemfile
@@ -24,3 +24,6 @@ collections:
 
 sass:
   style: compressed
+
+plugins:
+  - jekyll-seo-tag
