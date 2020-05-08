@@ -1,5 +1,6 @@
 ---
 title: Multimedia Production
+description: Audio, video and interactive video development
 fas: fa-film
 ---
 

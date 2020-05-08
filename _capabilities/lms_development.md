@@ -1,7 +1,8 @@
 ---
-title: LMS Development
+title: LMS Customization
+Description: Custom Moodle plugins, IMIS INtegration
 fas: fa-cogs
 ---
 
-- Custom Moodle and Totara plugins
+- Custom Moodle plugins
 - Moodle/IMIS integration
