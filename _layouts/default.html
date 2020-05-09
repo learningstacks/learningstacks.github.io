@@ -1,21 +1,32 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en-us">
-
 {% include head.html %}
 
-<body class="layout-default">
+<body class="format-{{ page.format }}">
+    <div id="page-container">
 
-    <div id="page-container" class="row">
-        <div class="sidebar col-lg-3">
-            {% include sidebar.html %}
-        </div>
-        <div class="page-content col-lg-9 offset-lg-3 row flex-column">
+        <!-- Site header is hidden at >= lg -->
+        <header id="site-header">
+            {% include brand.html %}
+            <!-- nav -->
+        </header>
+
+        <!-- Pull out, nav only on small screen. Fixed to the side on lg -->
+        {% include sidebar.html %}
+
+        <main>
             {{ content }}
-        </div>
+        </main>
+
+        <footer id="page-footer">
+            {% include contact_block.html %}
+            <div class="copyright">&copy; 2020 Learning Stacks LLC</div>
+        </footer>
+
     </div>
-
-    {% include footer.html %}
-
 </body>
 
 </html>

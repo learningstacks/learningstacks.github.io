@@ -1,0 +1,15 @@
+article {
+    padding: 2em;
+
+    h1 {
+        text-align: left;
+        padding-bottom: 0.25em;
+        margin-bottom : 0.5em;
+        border-bottom: 1px solid black;
+
+        i {
+            margin-right: 1rem;
+            color: darkred;
+        }
+    }
+}

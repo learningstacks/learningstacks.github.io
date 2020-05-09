@@ -1,8 +1,10 @@
 ---
 title: LMS Customization
-Description: Custom Moodle plugins, IMIS INtegration
+description: Custom Moodle plugins, IMIS INtegration
 fas: fa-cogs
 ---
 
-- Custom Moodle plugins
-- Moodle/IMIS integration
+We develop custom software for Moodle including plugins of all types.
+
+We also license a set of plugins that integrate the [iMIS](https://www.advsol.com/) system and the Moodle LMS
+providing single sign-on, course completion reporting and profile synchronization. [Details](/articles/moodleimis-integration.html)

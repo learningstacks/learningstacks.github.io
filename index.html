@@ -1,68 +1,70 @@
 ---
 layout: default
 title: Learning Stacks LLC
-description: >
-    Learning Stacks provides Online Learning Technology services including 
-    Instructional Design, Multimedia production, and LMS customizations.
+description: Learning Stacks provides Online Learning Technology services including Instructional Design, Multimedia production, and LMS customizations.
+format: home
 ---
 
-<section id="capabilities" class="our-capabilities container-fluid">
-    <div class="container">
-        <header>
-            <h1 class="section-title">Our Capabilities</h1>
-        </header>
-        <div class="row">
-            {% for cap in site.capabilities %}
-            <article class="capability-card col-md-6">
-                <header>
-                    <h2><i class="fas {{ cap.fas }}" aria-hidden="true"
-                            style="font-size: 60px; margin-right: 1rem"></i>{{ cap.title }}</h2>
-                </header>
-                {{ cap.content }}
-            </article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section id="team" class="container-fluid our-team">
-    <div class="container">
-        <header>
-            <h1 class="section-title">Our Team</h1>
-        </header>
-        <div class="row" style="align-items: stretch;">
-            {% for member in site.members %}
-            <div class="col-xl-6">
-                <article class="member-card">
-                    <aside>
-                        <img class="member-img" src="/assets/img/members/{{member.profile}}.jpg" alt="">
-                        <p><a href="http://www.linkedin.com/in/{{member.profile}}"> <img
-                                    src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
-                                    alt="View {{member.name}}'s profile on LinkedIn" width="80" height="15"> </a></p>
-                    </aside>
-                    <div class="content">
-                        <header>
-                            <h2>{{ member.name }}</h2>
-                            <p>{{ member.title }}</p>
-                        </header>
-                        {{ member.content }}
-                    </div>
+<div id="home-page-content">
+    <section id="capabilities" class="our-capabilities container-fluid">
+        <div class="container">
+            <header>
+                <h1 class="section-title">Our Capabilities</h1>
+            </header>
+            <div class="row">
+                {% for cap in site.capabilities %}
+                <article class="capability-card col-md-6">
+                    <header>
+                        <h2><i class="fas {{ cap.icon }}" aria-hidden="true"
+                                style="font-size: 60px; margin-right: 1rem"></i>{{ cap.title }}</h2>
+                    </header>
+                    {{ cap.content }}
                 </article>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="clients" class="our-clients">
-    <div class="container">
-        <header>
-            <h1 class="section-title">Recent Clients</h1>
-        </header>
-        <div class="row justify-content-center">
-            {% for client in site.clients %}
-            {% include client_card.html img=client.img title=client.title content=client.content %}
-            {% endfor %}
+    <section id="team" class="container-fluid our-team">
+        <div class="container">
+            <header>
+                <h1 class="section-title">Our Team</h1>
+            </header>
+            <div class="row" style="align-items: stretch;">
+                {% for member in site.members %}
+                <div class="col-xl-6">
+                    <article class="member-card">
+                        <aside>
+                            <img class="member-img" src="/assets/img/members/{{member.profile}}.jpg" alt="">
+                            <p><a href="http://www.linkedin.com/in/{{member.profile}}"> <img
+                                        src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png"
+                                        alt="View {{member.name}}'s profile on LinkedIn" width="80" height="15"> </a>
+                            </p>
+                        </aside>
+                        <div class="content">
+                            <header>
+                                <h2>{{ member.name }}</h2>
+                                <p>{{ member.title }}</p>
+                            </header>
+                            {{ member.content }}
+                        </div>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="clients" class="our-clients">
+        <div class="container">
+            <header>
+                <h1 class="section-title">Recent Clients</h1>
+            </header>
+            <div class="row justify-content-center">
+                {% for client in site.clients %}
+                {% include client_card.html img=client.img title=client.title content=client.content %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
