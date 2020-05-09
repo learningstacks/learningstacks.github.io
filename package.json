@@ -6,6 +6,7 @@
   "author": "Terry Campbell <terry@learningstacks.com>",
   "license": "MIT",
   "scripts": {
+    "build": "bundle exec jekyll build --trace --strict_front_matter --verbose",
     "serve": "bundle exec jekyll serve --livereload --trace --strict_front_matter --verbose"
   },
   "dependencies": {
