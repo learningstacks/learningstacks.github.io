@@ -2,7 +2,6 @@
 title: Moodle-iMIS Integration
 description: Learnng Stacks Moodle-IMIS integration plugins
 layout: article
-format: article
 ---
 
 Learning Stacks provides a set of licensed plugins to integrate the [iMIS](https://www.advsol.com/) system and the Moodle LMS.

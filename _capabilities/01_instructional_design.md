@@ -1,6 +1,7 @@
 ---
 title: Instructional Design
-fas: fa-graduation-cap
+description: Instructional desogn for online learning
+icon: fas fa-graduation-cap
 ---
 
 End-to-end ELearning development including:
