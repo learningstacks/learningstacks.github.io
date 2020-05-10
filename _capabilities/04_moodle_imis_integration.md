@@ -2,6 +2,7 @@
 title: Moodle/iMIS Integration
 description: Moodle p[lugins to integregate Moodle and iMIS
 icon: fas fa-network-wired
+column: 3
 ---
 
 We license a set of plugins that integrate the [iMIS](https://www.advsol.com/) system and the Moodle LMS

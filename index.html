@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Learning Stacks LLC
-description: Learning Stacks provides Online Learning Technology services including Instructional Design, Multimedia production, and LMS customizations.
+description: Learning Stacks provides Online Learning Technology services.
 format: home
 ---
 
@@ -11,17 +11,15 @@ format: home
             <header>
                 <h1 class="section-title">Our Capabilities</h1>
             </header>
-            <div class="row">
-                {% for cap in site.capabilities %}
-                <article class="capability-card col-md-6">
-                    <header>
-                        <h2><i class="fas {{ cap.icon }}" aria-hidden="true"
-                                style="font-size: 60px; margin-right: 1rem"></i>{{ cap.title }}</h2>
-                    </header>
-                    {{ cap.content }}
-                </article>
-                {% endfor %}
-            </div>
+            {% for cap in site.capabilities %}
+            <article class="capability-card col-md-6">
+                <header>
+                    <h2><i class="fas {{ cap.icon }}" aria-hidden="true"
+                            style="font-size: 60px; margin-right: 1rem"></i>{{ cap.title }}</h2>
+                </header>
+                {{ cap.content }}
+            </article>
+            {% endfor %}
         </div>
     </section>
 
