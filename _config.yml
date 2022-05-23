@@ -2,9 +2,12 @@ title: "Learning Stacks LLC"
 tagline: "Online Learning Technology"
 description: Learning Stacks provides Online Learning Technology services including Instructional Design, Multimedia production, and LMS customizations.
 
-url: https://www.learningstacks.com
+# url: https://www.learningstacks.com
 
-destination: "_site"
+source: .
+destination: "./_site"
+repository: learningstacks/learningstacks.github.io
+github: [metadata]
 
 exclude:
   - Gemfile
@@ -16,6 +19,9 @@ exclude:
   - update_bootstrap.sh
   - yarn-error.log
   - CNAME
+  - docker-compose.yml
+  - .env
+  - .devcontainer
 
 collections:
   - members
@@ -27,3 +33,5 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+
+show_dir_listing: false
