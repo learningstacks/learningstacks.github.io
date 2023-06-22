@@ -1,0 +1,1 @@
+docker run --rm -p 4000:4000 --volume="$($PWD):/srv/jekyll:Z" -it jekyll/jekyll jekyll serve --watch --drafts
